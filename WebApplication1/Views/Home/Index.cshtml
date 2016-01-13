@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    
+    <h1 class="text-center">My Resume</h1>
+    <div class="text-center"><img class="img-circle" src="~/Content/Images/20150303_120951.jpg" /></div>
+</div>
+
+<div class="panel-group">
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h3>Military Experience</h3></div>
+        <div class="panel-body">
+            <h5>Summary:</h5>
+            <p>I spent 4 years in the United States Marine Corps. While in the military my job was 0612 field wireman(telephony).<br />
+            Some of the responsibilities I had were setting up phones, running cables, and digging trenches.
+            
+            </p>
+            <br />
+            @Html.ActionLink("Learn More", "MilitaryExperience", null, new { @class = "btn btn-primary" })
+        </div>
+        
+    </div>
+
+    <br />
+    <br />
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h3>Post Military Experience</h3></div>
+        <div class="panel-body">
+            <h5>Summary:</h5>
+            <p>
+                My first few jobs out of the military were all over the place, but I finally settled down to going to school part time and working full time at an Archictectual firm.
+                <br /> While there I decided to teach myself Html/css using only Microsoft Notepad.
+
+            </p>
+            @Html.ActionLink("Learn More", "PostMilitaryExperience", null, new { @class = "btn btn-primary" })
+
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h3>Recent Experience</h3></div>
+        <div class="panel-body">
+            <h5>Summary:</h5>
+            <p>For the past year and a half I have been working on my development skills. Be that with </p>
+            @Html.ActionLink("Learn More", "RecentExperience", null, new { @class = "btn btn-primary" })
+        </div>
+    </div>
+</div>
